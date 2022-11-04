@@ -1,0 +1,18 @@
+import java.util.ArrayList; 
+        public int removeElement(int[] nums, int val) {
+        ArrayList<Integer> li = new ArrayList<>(); 
+        for (int i:nums) {
+        	if (i != val) {
+        		li.add(i);
+        	}
+        }
+        int j= 0;
+        if(li.size()==0) {
+        	return 0;
+        }
+        for(int i:li) {
+        	nums[j++] = i;
+        }
+        
+        return li.size();	
+    }
